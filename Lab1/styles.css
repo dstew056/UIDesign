@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(113, 227, 255);
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.divQuestionSection{
+  text-align: left;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.bodyDiv{
+  background-color: rgb(240, 240, 240);
+}
+footer {
+  text-align: right;
+}
+img{
+    height: 100%;
+    width:100%;
+}
+.largeTextBox{
+  width: 500px;
+  height: 100px;
+}

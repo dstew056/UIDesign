@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bodyDiv">
+    <h1>Survey</h1>
+    <p>Please visit the
+        <a href="https://uozone2.uottawa.ca/?language=en" target="_blank"> UOttawa UOZone</a>
+        site, and answer the following questions
+    </p>
+    <a href="https://uozone2.uottawa.ca/?language=en" target="_blank"><img src="uozone.png" alt="Image not found"></a>
+
+    <br>
+    <br>
+
+    <form>
+      <div class="divQuestionSection">
+        <label for="first name">First Name: </label>
+        <input type="text" id="first name" name="name"><br>
+        <label for="surname">Last Name: </label>
+        <input type="text" id="surname" name="name">
+      </div>
+
+      <br>
+      <br>
+
+      <div class="divQuestionSection">
+        <label>Have you taken any classes in UI design?</label><br>
+        <input type="radio" id="Yes" name="YN" value="Yes">
+        <label>Yes</label><br>
+        <input type="radio" id="No" name="YN" value="No">
+        <label>No</label>
+      </div>
+      
+      <br>
+      <br>
+
+      <div class="divQuestionSection">
+        <label>How satisfied with this site are you?</label><br>
+        <select id="Satisfied">
+          <option value="Very Satisfied">Very satisfied</option>
+          <option value="Satisfied">Satisfied</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Disatisfied">Disatisfied</option>
+          <option value="Very Disatisfied">Very Disatisfied</option>
+        </select>
+      </div>
+      <br>
+      <br>
+
+      <div class="divQuestionSection">
+        <label>Select all that apply</label><br>
+        <input type="checkbox" id="usability" name="check" value="This site is easy to understand">
+        <label for="usability">This site is easy to understand</label><br>
+        <input type="checkbox" id="functionality" name="check" value="When I click buttons, the site behaves as I would expect">
+        <label for="functionality">When I click buttons, the site behaves as I would expect</label><br>
+        <input type="checkbox" id="efficiency" name="check" value="All the information I needed was easy to find and get to">
+        <label for="efficiency">All the information I needed was easy to find and get to</label>
+      </div>
+        
+      <br>
+      <br>
+
+      <div class="divQuestionSection">
+        <label>Please add any additional comments you have:</label><br>
+        <input type="text" id="add comments" name="add comments" class="largeTextBox"><br>
+      </div>
+
+      <br>
+      <br>
+      
+      <div class="divQuestionSection">
+        <input type="submit">
+      </div>
+
+      <br>
+      <br>
+    </form>
+  </div>
+</body>
+<footer>
+  <p>Author: David Stewart</p>
+  <p>Last Updated: May 22nd, 2021</p>
+</footer>
+</html>
