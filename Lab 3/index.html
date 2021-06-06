@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<div class="container"></div>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<div class = "header">
+  <label>David's Grocery Store</label>
+</div>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<!-- <div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div> -->
+
+<!-- Tab content -->
+<div class="main">
+  <div id="Client" class="tabcontent">
+    <h3>Client Information</h3>
+    <p>Tell us a bit about you.</p>
+    Check your dietary restrictions:<br>
+    <input type="checkbox" id="lactoseFree" name="info" value="I am lactose intolerant" onclick ="populateListProductChoices('displayProduct')">>
+    <label for="lactoseFree">I am lactose intolerant</label><br>
+    <input type="checkbox" id="nutFree" name="info" value="I am allergic to nuts" onclick ="populateListProductChoices('displayProduct')">>
+    <label for="nutFree">I am allergic to nuts</label><br>
+    <input type="checkbox" id="organic" name="info" value="I want to shop for organic foods" onclick ="populateListProductChoices('displayProduct')">>
+    <label for="organic">I want to shop for organic foods</label><br><br>
+  </div>
+
+  <div id="Products" class="tabcontent">
+    <h3>Your targeted products</h3>
+    <p>Add dietary restrictions to Client Information to filter your list</p>
+    Choose items to buy:
+    <div id="displayProduct"></div>
+    <button id="addCart" type="button" class="block" onclick="selectedItems()">
+      Go to cart
+    </button>
+  </div>
+</div>
+
+<div id="CartPage" class="cart">
+  <div id="Cart" class="tabcontent">
+    <h3>Cart</h3>
+    <p>Here is your cart.</p>
+    <div id="displayCart"></div>
+    <button onclick="backToStart()">Back</button>
+    <button id="goToPayment" type="button" class="block" onclick="goToPayment()">
+      Go to payment
+    </button>
+  </div>
+</div>
+
+<div id="PaymentPage" class = "payment">
+  <div id="Payment" class="tabcontent">
+    <h3>Payment</h3>
+    <p>Please enter your payment information</p>
+    <label>First Name</label><br>
+    <input type="text"><br>
+    <label>Last Name</label><br>
+    <input type="text"><br><br>
+    <label>Card Number</label><br>
+    <input type="text"><br>
+    <label>Security Code</label><br>
+    <input type="text"><br><br>
+    <img src="vm.jpg" alt="" style="width:20%;height:20%">
+  </div>
+
+  <div id="Delivery" class="tabcontent">
+    <h3>Delivery Options</h3>
+    <input type="radio" name="doptions" onclick="changeDeliveryPage('PickUp')">
+    <label>Pick up at store</label>
+    <input type="radio" name="doptions" onclick="changeDeliveryPage('Shipping')">
+    <label>Standard Shipping</label>
+    <div id="Shipping" class="subPage">
+      <br><label>Address</label><br>
+      <input type="text"><br>
+      <label>Postal Code</label><br>
+      <input type="text"><br>
+      <label>Unit Number (optional)</label><br>
+      <input type="text"><br><br>
+      <input type="checkbox">
+      <label>This delivery is a gift</label><br><br>
+      <label style="font-size: smaller;">Gifts will be sent in specially marked packaging</label>
+      <br>
+    </div>
+    <div id="PickUp" class="subPage">
+      <br><label>Groceries can be picked up between 7am <br> and 9pm the day they are ordered</label><br>
+      <select>
+        <option>7:00 am</option>
+        <option>8:00 am</option>
+        <option>9:00 am</option>
+        <option>10:00 am</option>
+        <option>11:00 am</option>
+        <option>12:00 pm</option>
+        <option>1:00 pm</option>
+        <option>2:00 pm</option>
+        <option>3:00 pm</option>
+        <option>4:00 pm</option>
+        <option>5:00 pm</option>
+        <option>6:00 pm</option>
+        <option>7:00 pm</option>
+        <option>8:00 pm</option>
+        <option>9:00 pm</option>
+      </select>
+    </div><br>
+    <button onclick="backToCart()" style="text-align: right; vertical-align: bottom;">Back</button>
+    <button onclick="placeOrder()" >Place Order</button>
+  </div>
+  
+</div>
+
+<div id="thankYou" class="thankYou">
+  <h3>Your order has been placed</h3><br>
+  <label>Thank you for your business!</label><br>
+  <button onclick="location.reload()">Place another Order</button>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+
+<footer>
+  <p>Author: David Stewart</p>
+  <p>Last Updated: May 29th, 2021</p>
+</footer>
+</div>
+</html>
