@@ -94,6 +94,11 @@ function selectedItems(){
 	document.getElementById("CartPage").style.display = "block";
 }
 
+function backToCart(){
+	openInfo("Cart");
+	document.getElementById("CartPage").style.display = "block";
+}
+
 function goToPayment(){
 	openInfo("Payment");
 	document.getElementById("PaymentPage").style.display = "block";
@@ -109,6 +114,7 @@ function backToStart(){
 function placeOrder(){
 	openInfo("thankYou")
 }
+
 function changeDeliveryPage(option){
 	options = ["Shipping","PickUp"];
 
