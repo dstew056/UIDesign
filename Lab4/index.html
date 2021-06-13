@@ -1,0 +1,190 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Module 4 Lab</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+
+
+<div class = "container-lg">
+
+    <nav class="navbar bg-white text-dark p-3 my-3 ">
+        <h1><img src="images/logo.jpg" width=50% height=50%>Dogs 'n Stuff Veterinary Clinic</h1>
+    </nav>
+    
+    <p style="font-size: 15px; text-align: right; font-style: italic; padding-right: 3rem">"Wow that's definitely more dogs than stuff" - Satisfied customer</p>
+    <p style="font-size: 20px; padding-left: 1.5rem">The <strong>best</strong> vetrinary clinic in town.</p>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        Book an appointment ->
+    </button>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    About Us
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class=" p-3 my-3 border bg-light">
+                    <h1 class="" style="font-size: 25px"></h1>
+                    <p style="font-size: 15px">
+                        <strong>Location:</strong> 123 boulevard street
+                        <br><br>
+                        <strong>Hours:</strong> Monday - Saturday: 8am - 6pm
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Sunday: Closed
+                        <br><br>
+                        <strong>Phone:</strong> 1-800-531-8008
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    List of Services Offered
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class=" p-3 my-3 border bg-light">
+                    <h1 class="" style="font-size: 25px">Routine Checkup</h1>
+                    <p style="font-size: 15px">
+                        A routine health inspection for checking up on any animal's health.
+                        <br>These should be performed at least once a year.
+                        <br>Price: $60
+                    </p>
+                    <h1 class="" style="font-size: 25px">Vaccinations</h1>
+                    <p style="font-size: 15px">
+                        One of the most important ways to keep your pets safe.
+                        <br>Make sure your animals are up to date to keep them happy and healthy.
+                        <br>Price: $80
+                    </p>
+                    <h1 class="" style="font-size: 25px">Rehabillitation</h1>
+                    <p style="font-size: 15px">
+                        Assistance with recovery from various physical ailments.
+                        <br>As your pets age, their ligaments (or ligma for short) will deteriorate.
+                        <br>Keep them active for longer with physiotherapy treatments!
+                        <br>Price: $120
+                    </p>
+                    <h1 class="" style="font-size: 25px">Nutritional Health Consult</h1>
+                    <p style="font-size: 15px">
+                        A great way to help ensure your animal is eating right!
+                        <br>Includes assessment diet planning for overweight, underweight, and healthy animals.
+                        <br>Price: $100
+                    </p>
+                    <h1 class="" style="font-size: 25px">Oral Care</h1>
+                    <p style="font-size: 15px">
+                        Your mouth requires daily care - Ensure your pets are subject to the same. 
+                        <br>Dental pain can be a painful experience for many pets.
+                        <br>Price: $80
+                    </p>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                        Book an appointment ->
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Meet our Staff
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class=" p-3 my-3 border bg-light" >
+                    <img src="images/Cindy.jpg" width=25% height=25% style="align-items: center;">
+                    <h4>Cindy</h4>
+                    Cindy is a vetrinarian with a Doctorate in Zoology from the University of Toronto. Her passion for helping animals started from a young age, when she visted the Toronto Zoo. In her spare time, Cindy likes to windsurf and read mystery novels.
+                </div>
+                <div class=" p-3 my-3 border bg-light">
+                    <img src="images/Jeff.jpg" width=25% height=25%>
+                    <h4>Jeff</h4>
+                    Jeff is a vet with a master's degree in animal physiology from the universty of Guelph. Jeff first developed his love for animals when he saved a tortoise by helping it into the pond behind his house. He still looks for it, hoping one day it will return to say thank you.
+                </div>
+                <div class=" p-3 my-3 border bg-light">
+                    <img src="images/Scott.jpg" width=25% height=25%>
+                    <h4>Scott</h4>
+                    Scott is our receptionist.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" p-3 my-3 border bg-light">
+        <h3>Sign up for our mailing list</h3>
+        <br>
+        Email:<input type="text">
+        <br>
+        <p style="font-style: italic; font-size: smaller;">We will never contact you with unrelated offers</p>
+        <br>
+        <button type="button" class="btn btn-success">Sign Up</button>
+    </div>
+</div>
+
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Please enter a date and time:
+          <br><br>
+          <div class="twoCol">
+            <strong>dd/mm</strong><br>
+            <input type="text" maxlength="2" style="width: 30px"><strong>/</strong><input type="text" maxlength="2" style="width: 30px"><strong>/</strong>2021
+          </div>
+          <div class="twoCol">
+            at:<br>
+            <select>
+                <option>7:00 am</option>
+                <option>8:00 am</option>
+                <option>9:00 am</option>
+                <option>10:00 am</option>
+                <option>11:00 am</option>
+                <option>12:00 pm</option>
+                <option>1:00 pm</option>
+                <option>2:00 pm</option>
+                <option>3:00 pm</option>
+                <option>4:00 pm</option>
+                <option>5:00 pm</option>
+                <option>6:00 pm</option>
+            </select>
+          </div>
+          <br><br><br>
+          Please select a service:
+          <select>
+              <option>Routine Checkup</option>
+              <option>Vaccionations</option>
+              <option>Rehabillitation</option>
+              <option>Nutritional Health Consult</option>
+              <option>Oral Care</Canvas></option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

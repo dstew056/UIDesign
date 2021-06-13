@@ -1,0 +1,17 @@
+td{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.twoCol{
+    float: left;
+    width: 50%;
+}
+body{
+    background-color:rgb(215, 196, 233)  ;
+}
