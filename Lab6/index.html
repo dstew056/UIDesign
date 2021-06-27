@@ -1,0 +1,299 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <title>Dogs 'n Stuff</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/script.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+
+
+<div class = "container-lg">
+
+    <nav class="navbar bg-white text-dark p-3 my-3" style="float: left">
+        <div class="nav">
+            <button onclick="location.href='#flush-headingOne'" class="btn btn-primary" type="button" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">About Us</button>
+            <button onclick="location.href='#flush-headingTwo'" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Services Offered</button>
+            <button onclick="location.href='#flush-collapseThree'" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Meet Our Staff</button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">Book an Appointment -></button>
+        </div>
+        <h1><img src="images/logo.jpg" width=50% height=50%>Dogs 'n Stuff Veterinary Clinic</h1>
+        <p style="float: left">
+            <img src="images/52971-200.png" width=20px height=20px style="margin-left: 10px;">
+            <strong>1-800-000-0000</strong>
+            <img src="images/png-clipart-computer-icons-location-icon-miscellaneous-location.png"width=20px height = 20px style="margin-left: 50px;">
+            <strong>123 boulevard street</strong>
+        </p>
+    </nav>
+
+    
+    
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+        Book an appointment ->
+    </button>
+
+    <br><br>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    About Us
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class=" p-3 my-3 border bg-light">
+                    <h1 class="" style="font-size: 25px"></h1>
+                    <p style="font-size: 15px">
+                        <strong>Location:</strong> 123 boulevard street
+                        <br><br>
+                        <strong>Hours:</strong> Monday - Saturday: 8am - 6pm
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Sunday: Closed
+                        <br><br>
+                        <strong>Phone:</strong> 1-800-000-0000
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    List of Services Offered
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class=" p-3 my-3 border bg-light">
+                    <em>All appointments last 1 hour</em><br><br>
+                    
+                    <h1 class="" style="font-size: 25px; float:left">Routine Checkup</h1><img src="images/icons8-medical-bag-30.png" style="float:left; width:30px; height: 30px"><br><br>
+                    <p style="font-size: 15px;">
+                        A routine health inspection for checking up on any animal's health.
+                        <br>These should be performed at least once a year.
+                        <br>Price: $60
+                    </p>
+                    
+                    <h1 class="" style="font-size: 25px; float:left">Vaccinations</h1><img src="images/icons8-syringe-24.png" style="float:left; width:30px; height: 30px"><br><br>
+                    <p style="font-size: 15px">
+                        One of the most important ways to keep your pets safe.
+                        <br>Make sure your animals are up to date to keep them happy and healthy.
+                        <br>Price: $80
+                    </p>
+                    
+                    <h1 class="" style="font-size: 25px; float:left">Rehabillitation</h1><img src="images/icons8-physiotherapy-50.png" style="float:left; width:30px; height: 30px"><br><br>
+                    <p style="font-size: 15px">
+                        Assistance with recovery from various physical ailments.
+                        <br>As your pets age, their ligaments (or ligma for short) will deteriorate.
+                        <br>Keep them active for longer with physiotherapy treatments!
+                        <br>Price: $120
+                    </p>
+                    
+                    <h1 class="" style="font-size: 25px; float:left">Nutritional Health Consult</h1><img src="images/icons8-dog-bowl-30.png" style="float:left; width:30px; height: 30px"><br><br>
+                    <p style="font-size: 15px">
+                        A great way to help ensure your animal is eating right!
+                        <br>Includes assessment diet planning for overweight, underweight, and healthy animals.
+                        <br>Price: $100
+                    </p>
+                    
+                    <h1 class="" style="font-size: 25px; float:left">Oral Care</h1><img src="images/icons8-tooth-30.png" style="float:left; width:30px; height: 30px"><br><br>
+                    <p style="font-size: 15px">
+                        Your mouth requires daily care - Ensure your pets are subject to the same. 
+                        <br>Dental pain can be a painful experience for many pets.
+                        <br>Price: $80
+                    </p>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                        Book an appointment ->
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Meet our Staff
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class=" p-3 my-3 border bg-light" >
+                    <img src="images/Cindy.jpg" width=25% height=25% style="align-items: center;">
+                    <h4>Cindy</h4>
+                    Cindy is a vetrinarian with a Doctorate in Zoology from the University of Toronto. Her passion for helping animals started from a young age, when she visted the Toronto Zoo. In her spare time, Cindy likes to windsurf and read mystery novels.
+                    <br><i>Cindy works Monday to Friday</i>
+                </div>
+                <div class=" p-3 my-3 border bg-light">
+                    <img src="images/Jeff.jpg" width=25% height=25%>
+                    <h4>Jeff</h4>
+                    Jeff is a vet with a master's degree in animal physiology from the universty of Guelph. Jeff first developed his love for animals when he saved a tortoise by helping it into the pond behind his house. He still looks for it, hoping one day it will return to say thank you.
+                    <br><i>Jeff works Tuesday to Saturday</i>
+                </div>
+                <div class=" p-3 my-3 border bg-light">
+                    <img src="images/Scott.jpg" width=25% height=25%>
+                    <h4>Scott</h4>
+                    Scott is our receptionist.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <label style="color: grey;">(1/4)  </label>
+          <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5> <img src="images/icons8-expert-mode-32.png" style="height:20px; width:20px">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Please select a service:
+            <select id="service-select">
+                <option>Routine Checkup</option>
+                <option>Vaccionations</option>
+                <option>Rehabillitation</option>
+                <option>Nutritional Health Consult</option>
+                <option>Oral Care</option>
+            </select>
+            <br>with:
+            <select id="expert-select">
+                <option>Cindy</option>
+                <option>Jeff</option>
+            </select><br>
+            <br><i>Cindy works Monday to Friday</i>
+            <br><i>Jeff works Tuesday to Saturday</i>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#bookingModal2" onClick="refreshCalendar()">Next-></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookingModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <label style="color: grey;">(2/4)</label>
+          <h5 class="modal-title" id="exampleModalLabel">Select a Time and Date</h5><img src="images/icons8-clock-24.png" style="height:20px; width:20px">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Please enter a date and time:
+            <br><br>
+            <div>
+                <div id="calendar" class="md-form">
+                    <input type="text" id="dateInput" placeholder="Please Select a Date...">
+                </div>
+            </div>
+            <br>
+            <div>
+                at:  
+                <select id="time-select">
+                    <option>8:00 am</option>
+                    <option>9:00 am</option>
+                    <option>10:00 am</option>
+                    <option>11:00 am</option>
+                    <option>12:00 pm</option>
+                    <option>1:00 pm</option>
+                    <option>2:00 pm</option>
+                    <option>3:00 pm</option>
+                    <option>4:00 pm</option>
+                    <option>5:00 pm</option>
+                    <option>6:00 pm</option>
+                </select>
+                <br><i>All appointments last 1 hour</i>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#bookingModal3">Next-></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookingModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <label style="color: grey;">(3/4)</label>
+          <h5 class="modal-title" id="exampleModalLabel" >Tell Us a Bit About You</h5><img src="images/icons8-help-30.png" style="height:20px; width:20px">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <em>This information is optional, but will help us contact you in emergencies</em>
+            <p>Full Name: <input type="text"></p>
+            <p>Phone Number: <input type="text" id="phone" title="We will call you with a reminder the day before your appointment"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#bookingModal4">Next-></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookingModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <label style="color: grey;">(4/4)  </label>
+          <h5 class="modal-title" id="exampleModalLabel" >Payment Information</h5><img src="images/icons8-mobile-payment-24.png" style="height: 20px; width: 20px;">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Card Number: <input type="text" id="debit" placeholder="0000000000000000" title="Your card will not be charged until after your appointment. In the event of a cancellation, you will be charged a fee of $20"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button onclick=confirmation() type="button" class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#bookingModal5">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookingModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" >Booking Confirmed!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p id="confirmParagraph">Thank you for booking with us! We will notify you via the phone number provided should any changes to your booking be necessary.<br><br> <strong>Appointment information:</strong>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

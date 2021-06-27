@@ -1,0 +1,22 @@
+td{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.twoCol{
+    float: left;
+    width: 50%;
+}
+.twoColPadded{
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+}
+html {
+    scroll-behavior: smooth;
+}
