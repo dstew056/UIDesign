@@ -1,3 +1,8 @@
+# UIDesign Repository
+
+This repository contains serveral simple projects designed to highlight some essential ui development skills. These include the basics of html development, and some simple use of the react.js framework.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
